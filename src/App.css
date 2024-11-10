@@ -1,0 +1,61 @@
+body {
+  font-family: "Abel", Arial, sans-serif;
+  background-color: #2a2d3e;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #3b3f55;
+  border: 1px solid #4b4e63;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  padding: 30px 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.counter-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+}
+
+.counter {
+  font-family: "Roboto Mono";
+  font-weight: 200;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.increment-btn {
+  background-color: #57b846;
+}
+
+.increment-btn:hover {
+  background-color: #4aa93d;
+}
+
+.decrement-btn {
+  background-color: #e76e55;
+}
+
+.decrement-btn:hover {
+  background-color: #d85f4b;
+}

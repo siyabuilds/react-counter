@@ -10,10 +10,16 @@ const Counter = () => {
     localStorage.setItem("count", count);
   }, [count]);
   return (
-    <div>
-      <p>Current Counter: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increase Counter</button>
-      <button onClick={() => setCount(count - 1)}>Decrease Counter</button>
+    <div className="container">
+      <p className="counter-text">
+        Current Counter: <span className="counter">{count}</span>
+      </p>
+      <button className="increment-btn" onClick={() => setCount(count + 1)}>
+        Increase Counter
+      </button>
+      <button className="decrement-btn" onClick={() => setCount(count - 1)}>
+        Decrease Counter
+      </button>
     </div>
   );
 };
