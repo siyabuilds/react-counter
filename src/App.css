@@ -11,12 +11,53 @@ body {
 
 .container {
   background-color: #3b3f55;
-  border: 1px solid #4b4e63;
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   padding: 30px 20px;
   width: 300px;
   text-align: center;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.container::after,
+.container::before {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #57b846 25%,
+    #00c1d4 50%,
+    #e76e55 75%,
+    #57b846 100%
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 2px;
+  border-radius: 8px;
+  animation: 3s spin linear infinite;
+}
+
+.container::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 .counter-text {
