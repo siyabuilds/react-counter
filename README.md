@@ -1,6 +1,6 @@
 # React Counter App
 
-This is a simple counter application built with **React**, featuring **increment** and **decrement** functionality. The app allows users to interact with a counter, demonstrating key React concepts like **state management** and **event handling**.
+This is a simple counter application built with **React**, featuring **increment** and **decrement** functionality. The app allows users to interact with a counter, demonstrating key React concepts like **state management**, **event handling**, and **theme toggling**.
 
 ## Table of Contents
 
@@ -17,13 +17,15 @@ This is a simple counter application built with **React**, featuring **increment
 
 - **Increment**: Increases the counter by 1.
 - **Decrement**: Decreases the counter by 1.
+- **Dark Mode Toggle**: Allows users to toggle between light and dark themes.
 
-These basic features serve as a good introduction to React, focusing on state management and user interaction.
+These features serve as a good introduction to React, focusing on state management, user interaction, and theme customization.
 
 ## Technologies Used
 
 - **React**: JavaScript library for building user interfaces.
-- **React Hooks**: `useState` for managing the counter state.
+- **React Hooks**: `useState` for managing the counter state and theme.
+- **react-toggle-dark-mode**: A lightweight library for creating a dark mode toggle switch.
 - **CSS**: For basic styling.
 
 This project is designed to showcase fundamental React concepts and is easily extendable for more features.
@@ -64,8 +66,9 @@ Once the app is running:
 
 - **Increment**: Click the **Increase** button to increase the counter by 1.
 - **Decrement**: Click the **Decrease** button to decrease the counter by 1.
+- **Dark Mode Toggle**: Use the toggle switch to switch between light and dark themes.
 
-The app is interactive, and you can use these buttons to test the counter's functionality.
+The app is interactive, and you can use these buttons to test the counter's functionality and theme toggle.
 
 ## App Structure
 
@@ -78,6 +81,7 @@ The project structure is simple, designed to keep things modular and clean:
 │   ├── favicon.svg
 ├── /src
 │   ├── Counter.js
+│   ├── Header.js
 │   ├── App.js
 │   ├── App.css
 │   ├── index.js
@@ -87,15 +91,15 @@ The project structure is simple, designed to keep things modular and clean:
 ### Key Files:
 
 - `Counter.js`: Contains the logic for managing the counter (increment and decrement).
-- `App.js`: The main React component that renders `Counter.js` and includes any additional functionality.
+- `Header.js`: Contains the theme toggle switch and header title.
+- `App.js`: The main React component that renders `Counter.js` and `Header.js`.
 - `App.css`: The file where you define your app's styles.
 - `favicon.svg`: The app icon used in the browser tab.
 
 ## Future Implementations
 
-There are some future features and improvements planned for this app:
+There is just one future feature and improvement planned for this app:
 
-- **Dark Mode Toggle**: Implement a button that toggles between light and dark themes for a better user experience.
 - **Accessibility Enhancements**: Improve accessibility by adding keyboard navigation and support for screen readers.
 
 ## Support
