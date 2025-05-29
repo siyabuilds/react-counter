@@ -25,6 +25,11 @@
       "react-app/jest"
     ]
   },
+  "author": {
+    "name": "Siyabonga Samson Lukhele",
+    "email": "samsonlukhele76@gmail.com",
+    "url": "https://siyabuilds.tech"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
